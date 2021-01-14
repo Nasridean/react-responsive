@@ -1,0 +1,130 @@
+.services {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    color: white;
+    .img {
+        background: url('../../icons/image\ 9.png');
+        width: 50%;
+        background-size: cover;
+    }
+    h3 {
+        letter-spacing: 3px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    p {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        max-width: 380px;
+    }
+    .types {
+        position: relative;
+        width: 50%;
+        display: flex;
+        background-color: #8F0366;
+        flex-wrap: wrap;
+        > div {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+            i {
+                width: 76px;
+                height: 72px;
+                background-color: transparent;
+                background-position-x: 6px, 0; 
+                background-size: 70px 70px, 72px 72px;
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+        }
+        .flower-pattern {
+            position: absolute;
+            background-image: url('../../icons/Frame.png');
+            width: 233px;
+            height: 350px;
+            background-size: contain;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .nail-art {
+            width: 100%;
+            border-top: 1px solid rgba(0, 0, 0, 0.3);
+        }
+        .paraffin {
+            display:none;
+            border-top: 1px solid rgba(0, 0, 0, 0.3);
+            border-left: 1px solid rgba(0, 0, 0, 0.3);
+            i {
+                background-size: 64px 65px, 72px 72px;
+            }
+        }
+    }
+    .manicure i {
+        background: url('../../icons/Vector\ \(4\).png'), radial-gradient(#640046 71%, transparent 71%);
+    }
+    .pedicure i {
+        background: url('../../icons/Vector\ \(5\).png'), radial-gradient(#640046 71%, transparent 71%);
+    }
+    .nail-art i {
+        background: url('../../icons/XMLID\ 1544.png'), radial-gradient(#640046 71%, transparent 71%);
+    }
+    .paraffin i {
+        background: url('../../icons/Layer\ 4.png'), radial-gradient(#640046 71%, transparent 71%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .services {
+        .img {
+            display: none;
+        }
+        .types {
+            width: 100%;
+            > div {
+                padding: 4%;
+            }
+            p {
+                font-size: 14px;
+            }
+            .pedicure{
+                border-left: 1px solid rgba(0, 0, 0, 0.3);
+            }
+            .nail-art {
+                width: 50%;
+            }
+            .paraffin {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .services {
+        height: 960px;
+        .types {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: 0 17px;
+            > div {
+                width: 100% !important;
+                height: 25%;
+                h3 {
+                    margin: 3px 0 25px 0;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            .pedicure {
+                border-top: 1px solid  rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+i {
+  display: block;
+}
+.stripe {
+  background-color: #8F0365;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 61px;
+  width: 100%;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+  span {
+    color: #DBDBDB;
+  }
+  &__info-left {
+    width: 35vw;
+  }
+  &__languages {
+    width: 7vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  &__social-media {
+    width: 23vw
+  }
+}
+.facebook {
+  background: url('../../icons/Vector.png');
+  height: 23px;
+  width: 11.5px;
+}
+.twitter {
+  background: url('../../icons/Vector (1).png');
+  height: 19.05px;
+  width: 23.44px;
+}
+.google {
+  background: url('../../icons/google-plus\ 1.png');
+  height: 28px;
+  width: 28px;
+  background-size: contain;
+}
+.youtube {
+  background: url('../../icons/Group.png');
+  height: 23px;
+  width: 22px;
+}
+.pinterest-white {
+  background: url('../../icons/pinterest 1.png');
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+}
+.cart {
+  background: url('../../icons/Vector (3).png');
+  height: 20.53px;
+  width: 24px;
+}
+
+@media screen and (max-width: 1023px) {
+  .stripe {
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 0 20px;
+    &__info-left {
+      width: 54vw;
+    }
+    &__languages {
+      display: none !important;
+    }
+  }
+  .google, .pinterest-white {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .stripe {
+    display: none;
+  }
+}

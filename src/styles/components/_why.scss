@@ -1,0 +1,177 @@
+.why {
+    width: 100%;
+    height: 834px;
+    background-color: white;
+    display: flex;
+    >div {
+        width: 50%;
+        height: 100%;
+        * {
+            font-weight: 400;
+        }
+    }
+    h2 {
+        font-size: 55px;
+        font-weight: 400;
+        max-width: 451px;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        max-width: 633px;
+        line-height: 32px;
+    }
+    p:last-of-type {
+        color: #9B9B9B;
+
+    }
+    button  {
+        width: 160px;
+        height: 45px;
+        border: 3px solid #FFD8CB;
+        border-radius: 56px;
+        background-color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        margin-right: 470px;
+        font-size: 15px;
+    }
+    .left {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+        position: relative;
+        .pinterest {
+            position: absolute;
+            top: -36px;
+            left: -36px;
+            width: 512px;
+            height: 512px;
+            opacity: .2;
+        }
+        .dot-pattern {
+            width: 527px;
+            height: 579px;
+            background-color: transparent;
+            background-image: radial-gradient(#414141 32%, transparent 32%);
+            background-size: 26px 26px;
+            background-position: 0 0, 50px 50px;
+            margin: 182px -391px 0px 0;
+        }
+        .img {
+            width: 489px;
+            height: 566px;
+            background: url('../../icons/image 38.png');
+            background-size: cover;
+            background-color: #8F0366;
+            z-index: 2;
+            margin: 104px 0px 0 0;
+        }
+    }
+    
+    .right {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        //align-items: center;
+        padding-top: 70px;
+        padding-bottom: 150px;
+        padding-left: 5%;
+    }
+    .flower-pattern {
+        position: absolute;
+        background: url('../../icons/Group\ \(1\).png');
+        background-size: contain;
+        width: 984px;
+        height: 662px;
+        top: 0;
+        right: 0;
+        opacity: 0.25;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+     .why {
+         height: auto;
+         flex-direction: column-reverse;
+         >div {
+             width: 100%;
+         }
+         .dot-pattern {
+            margin: 151px -445px 0 0 !important;
+         }
+         .img {
+             margin-right: 3% !important;
+         }
+         .pinterest, .flower-pattern {
+             display: none;
+         }
+         .right {
+             align-items: baseline;
+             padding: 0 5%;
+         }
+         button {
+             margin-top: 36px;
+         }
+         h2 {
+             position: relative;
+             font-size: 45px;
+             font-weight: 600;
+             text-align: left;
+         }
+         h2::after {
+             content: '';
+             position: absolute;
+             background-color: #8F0366;
+             width: 142px;
+             height: 2px;
+             left: 0;
+             bottom: -16px;
+         }
+     }
+}
+
+@media screen and (max-width: 544px) {
+    .why {
+        flex-direction: column;
+        h2 {
+            font-size: 30px;
+            font-weight: 400;
+        }
+        h2::after {
+            width: 95px
+        }
+        p {
+            font-size: 15px
+        }
+        p:first-of-type {
+            font-weight: 500;
+        }
+        button {
+            width: 164px;
+            height: 54px;
+        }
+        .right {
+            padding-bottom: 50px;
+        }
+        .left {
+            justify-content: center;
+            .dot-pattern {
+                width: 324px !important;
+                height: 482px !important;
+                background-size: 19px 18px !important;
+                background-image: radial-gradient(#414141 25%, transparent 32%) !important;
+                margin: 1px -324px 0 0 !important;
+            }
+            .img {
+                width: 324px !important;
+                height: 345px !important;
+                background-position-x: right;
+                margin-top: 65px !important;
+            }
+        }
+        
+    }
+}

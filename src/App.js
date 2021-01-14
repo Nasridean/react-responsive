@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/styles.scss';
+import Stripe from './components/Stripe';
+import Menu from './components/Menu';
+import Motto from './components/Motto';
+import Why from './components/Why';
+import Services from './components/Services';
+import Quality from './components/Quality';
 
-function App() {
-  return (
+const App = () => (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Stripe />
+      <Menu />
+      <Motto />
+      <Why />
+      <Services />
+      <Quality />
     </div>
   );
-}
 
 export default App;
