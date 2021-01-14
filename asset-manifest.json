@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-responsive/static/css/main.a54adda0.chunk.css",
+    "main.js": "/react-responsive/static/js/main.9283bd1f.chunk.js",
+    "main.js.map": "/react-responsive/static/js/main.9283bd1f.chunk.js.map",
+    "runtime-main.js": "/react-responsive/static/js/runtime-main.4072c96e.js",
+    "runtime-main.js.map": "/react-responsive/static/js/runtime-main.4072c96e.js.map",
+    "static/js/2.54dedb71.chunk.js": "/react-responsive/static/js/2.54dedb71.chunk.js",
+    "static/js/2.54dedb71.chunk.js.map": "/react-responsive/static/js/2.54dedb71.chunk.js.map",
+    "static/js/3.a39ddc84.chunk.js": "/react-responsive/static/js/3.a39ddc84.chunk.js",
+    "static/js/3.a39ddc84.chunk.js.map": "/react-responsive/static/js/3.a39ddc84.chunk.js.map",
+    "index.html": "/react-responsive/index.html",
+    "static/css/main.a54adda0.chunk.css.map": "/react-responsive/static/css/main.a54adda0.chunk.css.map",
+    "static/js/2.54dedb71.chunk.js.LICENSE.txt": "/react-responsive/static/js/2.54dedb71.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/react-responsive/static/media/pattern.ea94791e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4072c96e.js",
+    "static/js/2.54dedb71.chunk.js",
+    "static/css/main.a54adda0.chunk.css",
+    "static/js/main.9283bd1f.chunk.js"
+  ]
+}
